@@ -25,12 +25,12 @@ function HowItWorks() {
   return (
     <section
       id="steps"
-      className="relative flex  flex-col lg:flex-row justify-between gap-16 lg:gap-30 w-full h-auto mb-25 sm:mb-50"
+      className="relative flex  flex-col lg:flex-row justify-between gap-16 lg:gap-30 w-full h-auto mt-25 sm:mt-50"
     >
       <div className="absolute z-20 w-40 h-40 top-20 left-0 bg-[#7214FF] rounded-full blur-[180px]" />
       <div className="flex items-center w-full sm:max-w-114">
         <div>
-          <h2 className="max-w-180 mb-4 text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+          <h2 className="max-w-180 mb-4 text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
             How It Works
           </h2>
           <p>

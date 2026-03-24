@@ -54,8 +54,8 @@ function Pricing({ setIsWindow }) {
   ];
 
   return (
-    <section id="pricing" className="w-full mb-22 sm:mb-44">
-      <h2 className="max-w-160 mx-auto mb-10 sm:mb-17 text-center text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+    <section id="pricing" className="w-full mt-25 sm:mt-50">
+      <h2 className="max-w-160 mx-auto mb-10 sm:mb-17 text-center text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
         Simple Pricing for Every Stage of Growth
       </h2>
       <div className="flex justify-center pb-20">
@@ -99,11 +99,12 @@ function Pricing({ setIsWindow }) {
               btnText={card.btnText}
               variant={index === 1 ? 'purple' : 'transparent'}
               onClick={() => setIsWindow(true)}
+              ariaLabel={card.btnText}
             />
             <ul className="pt-7 min-h-52">
               {card.includes.map((include, index) => (
                 <li key={index} className="flex gap-2 pb-2">
-                  <img src={check}></img>
+                  <img src={check} alt="check" loading="lazy"></img>
                   <span>{include}</span>
                 </li>
               ))}

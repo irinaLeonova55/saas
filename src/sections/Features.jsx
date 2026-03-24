@@ -47,9 +47,9 @@ function Features() {
   ];
 
   return (
-    <section id="features" className="mb-25 sm:mb-50">
+    <section id="features" className="mt-25 sm:mt-50">
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center mb-10 sm:mb-17">
-        <h2 className="max-w-180 text-center lg:text-left text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+        <h2 className="max-w-180 text-center lg:text-left text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
           Powerful AI Tools for Smarter Advertising
         </h2>
         <p className="max-w-110 text-center lg:text-left mt-6 lg:mt-0">
@@ -60,7 +60,12 @@ function Features() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:px-0 px-10">
         {features.map((feature) => (
           <div key={feature.id} className="w-full h-auto ">
-            <img src={feature.icon} alt={feature.title} className="max-h-10" />
+            <img
+              src={feature.icon}
+              alt={feature.title}
+              className="max-h-10"
+              loading="lazy"
+            />
             <h3 className="text-xl md:text-2xl font-semibold text-[#F6F6F7] pt-4 pb-3">
               {feature.title}
             </h3>

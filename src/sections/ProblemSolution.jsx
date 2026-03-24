@@ -1,9 +1,9 @@
 import problemIcon1 from '../assets/icons/problem-1.svg';
-import bgCard1 from '../assets/images/bg-card-1.png';
+import bgCard1 from '../assets/images/bg-card-1.webp';
 import problemIcon2 from '../assets/icons/problem-2.svg';
-import bgCard2 from '../assets/images/bg-card-2.png';
+import bgCard2 from '../assets/images/bg-card-2.webp';
 import problemIcon3 from '../assets/icons/problem-3.svg';
-import bgCard3 from '../assets/images/bg-card-3.png';
+import bgCard3 from '../assets/images/bg-card-3.webp';
 
 function ProblemSolution() {
   const problems = [
@@ -31,8 +31,8 @@ function ProblemSolution() {
   ];
 
   return (
-    <section className="mb-25 sm:mb-50">
-      <h2 className="max-w-160 mx-auto mb-6 text-center text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+    <section className="mt-20 sm:mt-40 ">
+      <h2 className="max-w-160 mx-auto mb-6 text-center text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
         Smarter Advertising Starts with Data and AI
       </h2>
       <p className="max-w-180 mx-auto text-center mb-10 sm:mb-17">
@@ -47,7 +47,8 @@ function ProblemSolution() {
               <div className="flex gap-3 items-center pb-3 min-h-20">
                 <img
                   src={problem.icon}
-                  alt="Problem icon"
+                  alt={problem.title}
+                  loading="lazy"
                   className="max-h-10"
                 />
                 <h3 className="text-xl font-semibold text-[#F6F6F7]">

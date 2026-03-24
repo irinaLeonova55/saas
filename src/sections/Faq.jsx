@@ -33,26 +33,26 @@ function Faq() {
   ];
 
   return (
-    <section id="faq" className="w-full mb-25 sm:mb-50">
-      <h2 className="max-w-160 mx-auto mb-10 sm:mb-17 text-center text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+    <section id="faq" className="w-full mt-25 sm:mt-50">
+      <h2 className="max-w-160 mx-auto mb-10 sm:mb-17 text-center text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
         Frequently Asked Questions
       </h2>
 
       {questions.map((question) => (
         <details
           key={question.id}
-          class="group max-w-200 mx-auto border-b border-[#8f9bb7] last:border-none py-4"
+          className="group max-w-200 mx-auto border-b border-[#8f9bb7] last:border-none py-4"
         >
-          <summary class="flex gap-2 w-full justify-between cursor-pointer list-none text-left text-xl md:text-2xl font-semibold text-[#F6F6F7]">
+          <summary className="flex gap-2 w-full justify-between cursor-pointer list-none text-left text-xl md:text-2xl font-semibold text-[#F6F6F7]">
             {question.question}
-            <span class="transition group-open:rotate-45 h-6">
+            <span className="transition group-open:rotate-45 h-6">
               <svg
                 xmlns="http://www.w3.org"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"

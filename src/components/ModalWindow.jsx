@@ -41,7 +41,10 @@ function ModalWindow({
             className="w-full h-11 border border-[#8f9bb7] rounded-xl p-3"
             onChange={handleTextModal}
           />
-          <button className="w-full h-13 rounded-xl text-white bg-[#7214FF]">
+          <button
+            className="w-full h-13 rounded-xl text-white bg-[#7214FF]"
+            aria-label="Get AI optimization"
+          >
             Get AI optimization
           </button>
           <span className="text-sm text-center text-[#0E1330]">

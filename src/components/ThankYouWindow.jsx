@@ -20,6 +20,7 @@ function ThankYouWindow({ onClick, title, desc }) {
             variant="purple"
             extraStyle="w-full"
             onClick={onClick}
+            ariaLabel="Close"
           />
         </div>
       </div>

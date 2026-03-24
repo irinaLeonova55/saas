@@ -15,12 +15,12 @@ function Footer({ emailFooter, handleEmailFooter, handleSubscribed }) {
     },
     {
       id: 2,
-      link: '#',
+      link: '#pricing',
       name: 'Sigh up',
     },
     {
       id: 3,
-      link: '#',
+      link: 'https://irinaleonova55.github.io/portfolio-en/',
       name: 'Developed by Leonova',
     },
   ];
@@ -46,11 +46,11 @@ function Footer({ emailFooter, handleEmailFooter, handleSubscribed }) {
     },
   ];
   return (
-    <footer className="relative w-full pt-10 md:pt-20 pb-10 bg-[#060b27] overflow-hidden ">
+    <footer className="relative w-full pt-10 md:pt-20 pb-10 bg-[#060b27] overflow-hidden  mt-12 sm:mt-25">
       <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 w-full mb-11  px-3 md:px-5">
         <div className="flex flex-col lg:flex-row justify-between w-full mb-11">
           <div className="w-full max-w-120 h-auto z-10">
-            <img src={logo} alt="OptiAds" />
+            <img src={logo} alt="OptiAds" loading="lazy" />
             <div className="bg-[#0E1330] w-full rounded-xl border border-[#282D45] py-6 sm:py-10 px-3 sm:px-7 mt-9">
               <h5 className="text-white text-xl text-left font-bold mb-5">
                 Subscribe to our newsletter
@@ -68,6 +68,7 @@ function Footer({ emailFooter, handleEmailFooter, handleSubscribed }) {
                 <button
                   type="submit"
                   className="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2 bg-[#7214FF] rounded-lg"
+                  aria-label="Subscribe"
                 >
                   Subscribe
                 </button>

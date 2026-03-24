@@ -56,9 +56,9 @@ function Calculator() {
   const afterPercent = (newLeads / maxLeads) * 100;
 
   return (
-    <section id="calculator" className="w-full mb-25 sm:mb-50">
+    <section id="calculator" className="w-full mt-25 sm:mt-50">
       <div className="flex flex-col items-center mx-0 mb-10 sm:mb-17 w-full">
-        <h2 className="max-w-160 mx-auto mb-1 text-center text-3xl md:text-5xl/14 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+        <h2 className="max-w-160 mx-auto mb-1 text-center text-3xl md:text-5xl/14 font-bold text-[#F6F6F7]">
           Estimate the Leads You're Missing
         </h2>
       </div>

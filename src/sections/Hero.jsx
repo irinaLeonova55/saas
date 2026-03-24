@@ -1,10 +1,10 @@
 import Button from '../components/Button';
-import heroMockup from '../assets/images/hero-mockup.jpg';
+import heroMockup from '../assets/images/hero-mockup.webp';
 
 function Hero() {
   return (
-    <section className="flex flex-col pt-12 mb-20 sm:mb-40 items-center text-center">
-      <h1 className="text-4xl md:text-6xl/16 font-bold bg-linear-to-b from-[#F6F6F7] to-[#7E808F] bg-clip-text text-transparent">
+    <section className="flex flex-col pt-12 items-center text-center">
+      <h1 className="text-4xl md:text-6xl/16 font-bold  text-[#F6F6F7]">
         Increase ROAS by up to 35%
       </h1>
       <p className="inline-block text-center py-7 max-w-200">
@@ -23,7 +23,8 @@ function Hero() {
       <img
         src={heroMockup}
         alt="OptiAds Service Mockup"
-        className="mt-12 w-full max-w-200 mx-auto transform scale-[1.02] shadow-2xl"
+        className="mt-12 w-full max-w-200 mx-auto transform scale-[1.02] shadow-xl rounded-2xl "
+        fetchPriority="high"
       />
     </section>
   );

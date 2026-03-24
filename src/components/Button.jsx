@@ -1,4 +1,4 @@
-function Button({ btnText, variant, extraStyle, href, onClick }) {
+function Button({ btnText, variant, extraStyle, href, onClick, ariaLabel }) {
   const btnStyle = {
     purple: 'bg-[#7214FF] text-white',
     transparent:
@@ -17,6 +17,7 @@ function Button({ btnText, variant, extraStyle, href, onClick }) {
       type="submit"
       onClick={onClick}
       className={`${btnStyle[variant]} flex justify-center items-center w-full sm:w-45 h-11 px-6 py-4 rounded-4xl cursor-pointer transition-all duration-200 ease-out hover:shadow-lg hover:shadow-[#7214FF]/20 hover:-translate-y-px active:translate-y-px ${extraStyle}`}
+      aria-label={ariaLabel}
     >
       {btnText}
     </button>
