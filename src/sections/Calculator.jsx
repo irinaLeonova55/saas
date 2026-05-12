@@ -40,8 +40,7 @@ function Calculator() {
     },
   ];
 
-  const leads =
-    clicks === 0 ? 0 : Math.round((budget / clicks) * (conversion / 100));
+  const leads = Math.round((budget / clicks) * (conversion / 100));
 
   const cpcImprovement = Math.min(0.25, clicks * 0.03);
   const crImprovement = Math.min(0.35, conversion * 0.05);
@@ -63,7 +62,7 @@ function Calculator() {
         </h2>
       </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-20 w-full h-auto rounded-xl mx-auto p-5 sm:p-10 md:p-24 border border-[#282D45] rounded-r-xl  overflow-hidden">
-        <div className="absolute z-5 w-46 h-58 -bottom-10 -left-5 bg-[#7214FF] rounded-full blur-[170px]" />
+        <div className="absolute z-5 w-46 h-58 -bottom-10 -left-5 bg-[#7214FF] rounded-full blur-[200px]" />
         <div className="bg-[#060B27] z-1  rounded-l-xl">
           <h2 className="mb-4 text-left text-3xl font-bold text-white">
             Enter your ad metrics
