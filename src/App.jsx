@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="App">
       <Navbar setIsBurger={setIsBurger} />
-      <main className="px-3 md:px-5">
+      <main className="px-3 md:px-5 max-w-318 mx-auto">
         <Hero />
         <ProblemSolution />
         <Calculator />

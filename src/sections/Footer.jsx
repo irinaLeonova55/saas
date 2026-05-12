@@ -47,7 +47,7 @@ function Footer({ emailFooter, handleEmailFooter, handleSubscribed }) {
   ];
   return (
     <footer className="relative w-full pt-10 md:pt-20 pb-10 bg-[#060b27] overflow-hidden  mt-12 sm:mt-25">
-      <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 w-full mb-11  px-3 md:px-5">
+      <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 max-w-318 mx-auto px-3 md:px-5 mb-11">
         <div className="flex flex-col lg:flex-row justify-between w-full mb-11">
           <div className="w-full max-w-120 h-auto z-10">
             <img src={logo} alt="OptiAds" loading="lazy" />
@@ -92,7 +92,7 @@ function Footer({ emailFooter, handleEmailFooter, handleSubscribed }) {
           </nav>
         </div>
       </div>
-      <div className="flex justify-between items-end gap-2 w-full h-16 border-t border-[#282D45] px-3 md:px-5">
+      <div className="flex justify-between items-end gap-2 w-full h-16 border-t border-[#282D45] px-3 md:px-5 max-w-318 mx-auto">
         <span>Copyright © OptiAds</span>
         <ul className="flex gap-4">
           {socialLinks.map((socialLink) => (
